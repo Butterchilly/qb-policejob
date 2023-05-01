@@ -139,6 +139,6 @@ Police Job for QB-Core Framework :police_officer:
 
 ## Credits
 
-![Original script](https://github.com/qbcore-framework/qb-policejob)
+[Original script](https://github.com/qbcore-framework/qb-policejob)
 
 
