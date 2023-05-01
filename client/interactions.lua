@@ -410,7 +410,7 @@ RegisterNetEvent('police:client:GetCuffed', function(playerId, isSoftcuff)
                     GetCuffedAnimation(playerId)
                     QBCore.Functions.Notify("You are handcuffed, but you can walk", "error")
                 end    
-                print("fail")
+                QBCore.Functions.Notify("You Failed To Break Cuff", "error")
             end
         end, 1, seconds) -- NumberOfCircles, MS        
     else
