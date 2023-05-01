@@ -402,6 +402,7 @@ RegisterNetEvent('police:client:GetCuffed', function(playerId, isSoftcuff)
                 TriggerServerEvent("police:server:SetHandcuffStatus", false)
                 ClearPedTasksImmediately(ped)
                 TriggerServerEvent("InteractSound_SV:PlayOnSource", "Uncuff", 0.2)
+                TriggerServerEvent('hud:server:GainStress', math.random(2, 3)) -- Gives the player stress from breaking free.
                 QBCore.Functions.Notify("You managed to break free", "success")
             else
                 isHandcuffed = true
